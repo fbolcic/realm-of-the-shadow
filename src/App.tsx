@@ -1,5 +1,17 @@
+import { Box, OverflowContainer, ContentBox } from "./components";
+
 function App() {
-  return <div>Hello from the Realm of the shadow!</div>;
+  return (
+    <Box style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <OverflowContainer>
+        <ContentBox />
+        <ContentBox />
+        <ContentBox />
+        <ContentBox />
+        <ContentBox />
+      </OverflowContainer>
+    </Box>
+  );
 }
 
 export default App;
