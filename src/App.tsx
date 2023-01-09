@@ -1,15 +1,136 @@
-import { Box, OverflowContainer, ContentBox } from "./components";
+import { Box, SimpleOverflowContainer, ContentBox } from "./components";
 
 function App() {
   return (
     <Box style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <OverflowContainer>
-        <ContentBox />
-        <ContentBox />
-        <ContentBox />
-        <ContentBox />
-        <ContentBox />
-      </OverflowContainer>
+      <SimpleOverflowContainer>
+        This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is
+        some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text This is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some text This is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        text This is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some text This is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some text This is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some text This is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some text This
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some text This is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some text This is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some textThis is some textThis is some text This is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some textThis is some textThis is some text This is some
+        textThis is some textThis is some textThis is some textThis is some textThis is some textThis is some textThis
+        is some text This is some textThis is some textThis is some textThis is some textThis is some textThis is some
+        textThis is some textThis is some text This is some textThis is some textThis is some textThis is some textThis
+        is some textThis is some textThis is some textThis is some text
+      </SimpleOverflowContainer>
     </Box>
   );
 }

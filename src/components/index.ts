@@ -1,3 +1,3 @@
 export { Box } from "./Box";
-export { OverflowContainer } from "./OverflowContainer";
+export { SimpleOverflowContainer } from "./OverflowContainer";
 export { ContentBox } from "./ContentBox";
