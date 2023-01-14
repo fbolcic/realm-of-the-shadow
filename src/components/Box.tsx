@@ -1,10 +1,11 @@
 interface BoxProps {
   children?: React.ReactNode;
   style?: React.CSSProperties;
+  onScroll?: React.UIEventHandler<HTMLDivElement>;
 }
 
-export const Box = ({ children, style }: BoxProps) => {
-  return <div style={style}>{children}</div>;
+export const Box = (props: BoxProps) => {
+  return <div {...props} />;
 };
 
 export const ContentBox = () => {
