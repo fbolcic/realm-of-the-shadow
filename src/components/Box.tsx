@@ -1,12 +1,16 @@
+import { forwardRef } from "react";
+
 export interface BoxProps {
   children?: React.ReactNode;
   style?: React.CSSProperties;
   onScroll?: React.UIEventHandler<HTMLDivElement>;
 }
 
-export const Box = (props: BoxProps) => {
-  return <div {...props} />;
-};
+export const Box = forwardRef<HTMLDivElement, BoxProps>((props, ref) => {
+  return <div ref={ref} {...props} />;
+});
+
+Box.displayName = "Box";
 
 export const ContentBox = () => {
   return (

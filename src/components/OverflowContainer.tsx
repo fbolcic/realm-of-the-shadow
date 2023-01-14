@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { Box, BoxProps } from "./Box";
 
 const OverflowContainer = ({ style, ...props }: BoxProps) => {
@@ -45,7 +46,7 @@ export const SimpleOverflowContainer = ({ style, ...props }: BoxProps) => {
   );
 };
 
-export const ScrollOverflowContainer = ({ onScroll, children, ...props }: BoxProps) => {
+export const ScrollOverflowContainer = ({ onScroll, ...props }: BoxProps) => {
   const [scrollPosition, setScrollPosition] = useState<"top" | "middle" | "bottom">("top");
 
   function handleOnScroll(event: React.UIEvent<HTMLDivElement>) {
@@ -63,31 +64,66 @@ export const ScrollOverflowContainer = ({ onScroll, children, ...props }: BoxPro
 
   return (
     <Box style={{ position: "relative" }}>
-      {scrollPosition !== "top" && (
-        <Box
-          style={{
-            position: "absolute",
-            top: 0,
-            width: "100%",
-            height: "60px",
-            background: "linear-gradient(to top, transparent, white)",
-          }}
-        />
-      )}
-      <OverflowContainer {...props} onScroll={handleOnScroll}>
+      <Box
+        style={{
+          display: scrollPosition === "top" ? "none" : "block",
+          position: "absolute",
+          top: 0,
+          width: "100%",
+          height: "60px",
+          background: "linear-gradient(to top, transparent, white)",
+        }}
+      />
+      <OverflowContainer {...props} onScroll={handleOnScroll} />
+      <Box
+        style={{
+          display: scrollPosition === "bottom" ? "none" : "block",
+          position: "absolute",
+          bottom: 0,
+          width: "100%",
+          height: "60px",
+          background: "linear-gradient(to bottom, transparent, white)",
+        }}
+      />
+    </Box>
+  );
+};
+
+export const IntersectionOverflowContainer = ({ children, ...props }: BoxProps) => {
+  const { ref: topEdgeRef, inView: topEdgeInView } = useInView({
+    threshold: 0,
+  });
+  const { ref: bottomEdgeRef, inView: bottomEdgeInView } = useInView({
+    threshold: 0,
+  });
+
+  return (
+    <Box style={{ position: "relative" }}>
+      <Box
+        style={{
+          display: topEdgeInView ? "none" : "block",
+          position: "absolute",
+          top: 0,
+          height: "60px",
+          width: "100%",
+          background: "linear-gradient(to top, transparent, white)",
+        }}
+      />
+      <OverflowContainer {...props}>
+        <Box ref={topEdgeRef} />
         {children}
+        <Box ref={bottomEdgeRef} />
       </OverflowContainer>
-      {scrollPosition !== "bottom" && (
-        <Box
-          style={{
-            position: "absolute",
-            bottom: 0,
-            width: "100%",
-            height: "60px",
-            background: "linear-gradient(to bottom, transparent, white)",
-          }}
-        />
-      )}
+      <Box
+        style={{
+          display: bottomEdgeInView ? "none" : "block",
+          position: "absolute",
+          bottom: 0,
+          height: "60px",
+          width: "100%",
+          background: "linear-gradient(to bottom, transparent, white)",
+        }}
+      />
     </Box>
   );
 };
