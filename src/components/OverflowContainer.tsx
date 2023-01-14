@@ -6,7 +6,7 @@ interface OverflowContainerProps {
 }
 
 const OverflowContainer = ({ children, style }: OverflowContainerProps) => {
-  return <Box style={{ ...style, width: 1000, height: 800, margin: "auto", overflowY: "auto" }}>{children}</Box>;
+  return <Box style={{ ...style, width: 800, height: 800, overflowY: "auto" }}>{children}</Box>;
 };
 
 export const SimpleOverflowContainer = ({ children }: OverflowContainerProps) => {
