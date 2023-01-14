@@ -1,4 +1,4 @@
-interface BoxProps {
+export interface BoxProps {
   children?: React.ReactNode;
   style?: React.CSSProperties;
   onScroll?: React.UIEventHandler<HTMLDivElement>;

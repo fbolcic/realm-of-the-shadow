@@ -1,2 +1,2 @@
 export { Box, ContentBox } from "./Box";
-export { SimpleOverflowContainer } from "./OverflowContainer";
+export { SimpleOverflowContainer, ScrollOverflowContainer } from "./OverflowContainer";

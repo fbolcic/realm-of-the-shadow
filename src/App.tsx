@@ -1,15 +1,15 @@
-import { Box, SimpleOverflowContainer, ContentBox } from "./components";
+import { Box, ContentBox, ScrollOverflowContainer } from "./components";
 
 function App() {
   return (
     <Box style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <SimpleOverflowContainer>
+      <ScrollOverflowContainer>
         <ContentBox />
         <ContentBox />
         <ContentBox />
         <ContentBox />
         <ContentBox />
-      </SimpleOverflowContainer>
+      </ScrollOverflowContainer>
     </Box>
   );
 }
